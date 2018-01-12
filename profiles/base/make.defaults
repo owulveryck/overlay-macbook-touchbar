@@ -9,12 +9,14 @@ LINUX_FIRMWARE="brcmfmac-all"
 # Use LLVM amdgpu target when building LLVM.
 LLVM_TARGETS="AMDGPU X86"
 
+BOARD_USE="amd64-corei7"
+
 # Initial value just for style purposes.
 USE=""
 
 USE="${USE} containers device_jail kvm_host"
 
-USE="${USE} sse kernel-experimental board_use_amd64-corei7"
+USE="${USE} sse kernel-experimental"
 
 # Enable all optional features on generic overlays.
 USE="${USE} buffet"
